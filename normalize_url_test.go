@@ -18,6 +18,11 @@ func TestNormalizeURL(t *testing.T) {
 			inputURL: "https://www.example.com/page#section2",
 			expected: "www.example.com/page",
 		},
+		{
+			name: "remove queries",
+			inputURL: "https://www.example.com/page?query=1",
+			expected: "www.example.com/page",
+		},
 	}
 
 	for i, tc := range tests {

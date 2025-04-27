@@ -14,3 +14,5 @@ func normalizeURL(original_url string) (string, error) {
 	fmt.Println(normalizedUrl)
 	return normalizedUrl, nil
 }
+
+
